@@ -15,6 +15,12 @@ cd esp-open-rtos
 /path/to/cppchk.sh --fix
 ```
 
+Edit `NetOCD/include/private_ssid_config.h` to match your wireless network.
+```C
+#define WIFI_SSID "name"
+#define WIFI_PASS "pasword"
+```
+
 Create a symlink to the SDK on the root of the project, there must be a file `SDK/common.mk` for the project to build.
 ```bash
 cd /path/to/NetOCD
